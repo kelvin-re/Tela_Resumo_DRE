@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta http-equiv="Content-Language" content="en">
+      <meta name="msapplication-TileColor" content="#9a1c20">
+      <meta name="theme-color" content="#9a1c20">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="HandheldFriendly" content="True">
+      <meta name="MobileOptimized" content="320">
+      <!-- CSRF Token -->
+      <meta name="csrf-token" content="qWj0zjzwGM8x2UTTatQeYBB9VkPfSIJTB9CEvCih">
+      <link rel="icon" href="https://portal.loucosporcoxinha.technine.com.br/uploads/configuracoes/favicon-004915800-1628605995.png" type="image/x-icon">
+      <link rel="shortcut icon" type="image/x-icon" href="https://portal.loucosporcoxinha.technine.com.br/uploads/configuracoes/favicon-004915800-1628605995.png">
+      <!-- Generated: 2019-04-04 16:08:45 +0200 -->
+      <title>Portal Loucos Por Coxinha</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Scripts -->
+      <link href="https://portal.loucosporcoxinha.technine.com.br/css/app.css" rel="stylesheet">
+
+      <style>
+        header.navbar:first-child {
+          background: #ffca05;
+        }
+        header:first-child .dropdown:last-child .text-user-name {
+          color: #9a1c20;
+        }
+        header .dropdown i {
+          color: #9a1c20;
+        }
+        .nav-unread {
+          background-color: #ff9300 !important;
+        }
+
+        .navbar .navbar-toggler {
+          color: #9a1c20;
+        }
+
+        .bg-cor-primaria {
+          background-color: #9a1c20;
+        }
+
+        .bg-cor-primaria-escura {
+          background-color: #490000;
+        }
+        
+        .card-header{
+          display: inline-block;
+        }
+        
+        .maismenos{
+          margin: 10px;
+          padding: 0px;
+          width: 10px;
+          height: 10px;
+        }
+        .tr{
+          background-color: #F4F6FA;
+        } 
+
+      </style>
+    </head>
+    <body class="antialiased">
+        <header class="navbar navbar-expand-md navbar-light d-print-none">
+            <div class="container-xl">
+                <button
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbar-menu"
+                    class="navbar-toggler"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a
+                href="#"
+                class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pr-0 pr-md-3"
+                >
+                    <img
+                    src="https://portal.loucosporcoxinha.technine.com.br/uploads/configuracoes/logo-lpc-098784000-1628604138.png"
+                    class="navbar-brand-image"
+                    >
+                </a>
+                <div class="navbar-nav flex-row order-md-last">
+                    <div class="nav-item dropdown d-none d-md-flex me-3">
+                        <div class="nav-item dropdown d-none d-md-flex cursor-pointer">
+                            <a
+                                data-toggle="modal"
+                                data-target="#modal-busca"
+                                class="nav-link px-0"
+                            >
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                        <div class="nav-item dropdown d-none d-md-flex cursor-pointer">
+                            <a 
+                                data-toggle="dropdown" 
+                                class="nav-link px-0"
+                            >   
+                                <i class="fa fa-check-square"></i>
+                            </a>
+                        </div>  
+                        <div class="nav-item dropdown d-none d-md-flex cursor-pointer">
+                            <a 
+                                data-toggle="dropdown" 
+                                class="nav-link px-0"
+                            >
+                                <i class="fa fa-bullhorn faa-flash animated"></i>
+                                <span class="badge nav-unread faa-flash animated"></span>
+                            </a>
+                        </div>
+                        <div class="nav-item dropdown d-none d-md-flex cursor-pointer">
+                            <a 
+                                data-toggle="dropdown" 
+                                class="nav-link px-0"
+                            >
+                                <i class="fa fa-bell-o faa-flash animated"></i>
+                                <span class="badge nav-unread faa-flash animated"></span>
+                            </a>
+                        </div>
+                        <div class="nav-item dropdown d-none d-md-flex cursor-pointer">
+                            <a 
+                            data-toggle="dropdown" 
+                            class="nav-link px-0"
+                            >
+                                <i class="fa fa-video-camera faa-flash animated"></i>
+                                <span class="badge nav-unread faa-flash animated"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a
+                            href="#"
+                            data-toggle="dropdown"
+                            aria-expanded="false"
+                            class="nav-link d-flex lh-1 text-reset p-0">
+                            <span
+                                class="avatar avatar-sm me-1" style="background-image: url('https://portal.amavia.technine.com.br/uploads/usuario/adm-icon-031766700-1620156003.png');">
+                            </span>
+                            <div class="d-none d-xl-block pl-2">
+                                <div class="text-user-name">
+                                    Administrador
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="navbar-expand-md">
+            <div id="navbar-menu" class="collapse navbar-collapse">
+                <div class="navbar navbar-light">
+                    <div class="container-xl">
+                        <ul class="navbar-nav">
+                            <li class="
+                                nav-item
+                                justify-content-start justify-content-md-center
+                                flex-row flex-md-column
+                                active"
+                            >
+                            <a href="#" class="nav-link">
+                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon"
+                                    >
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <polyline points="5 12 3 12 12 3 21 12 19 12"></polyline>
+                                        <path
+                                        d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7">
+                                        </path>
+                                        <path
+                                        d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <span class="nav-link-title"> Início </span>
+                            </a>
+                            </li>
+                            <li
+                            class="
+                                nav-item
+                                justify-content-start justify-content-md-center
+                                flex-column flex-md-row
+                                align-items-start align-items-md-center
+                                dropdown"
+                            >
+                            <a
+                                href="#navbar-base"
+                                data-toggle="dropdown"
+                                role="button"
+                                aria-expanded="false"
+                                class="nav-link dropdown-toggle w-100"
+                                >
+                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <i class="fa fa-video-camera"></i>
+                                </span>
+                                <span class="nav-link-title"> Vídeos </span>
+                            </a>
+                            </li>
+                            <li
+                            class="
+                                nav-item
+                                justify-content-start justify-content-md-center
+                                flex-column flex-md-row
+                                align-items-start align-items-md-center
+                                dropdown"
+                            >
+                            <a
+                                href="#navbar-base"
+                                data-toggle="dropdown"
+                                role="button"
+                                aria-expanded="false"
+                                class="nav-link dropdown-toggle w-100">
+                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <i class="fa fa-bullhorn"></i>
+                                </span>
+                                <span class="nav-link-title"> Comunicados </span>
+                            </a>
+                            </li>
+                            <li
+                            class="
+                                nav-item
+                                justify-content-start justify-content-md-center
+                                flex-column flex-md-row
+                                align-items-start align-items-md-center
+                                dropdown"
+                            >
+                            <a
+                                href="#navbar-base"
+                                data-toggle="dropdown"
+                                role="button"
+                                aria-expanded="false"
+                                class="nav-link dropdown-toggle w-100">
+                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <i class="fa fa-folder-open"></i>
+                                </span>
+                                <span class="nav-link-title"> Arquivos </span>
+                            </a>
+                            </li>
+                            <li
+                            class="
+                                nav-item
+                                justify-content-start justify-content-md-center
+                                flex-column flex-md-row
+                                align-items-start align-items-md-center
+                                dropdown"
+                            >
+                            <a
+                                href="#navbar-base"
+                                data-toggle="dropdown"
+                                role="button"
+                                aria-expanded="false"
+                                class="nav-link dropdown-toggle w-100">
+                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                <span class="nav-link-title"> Solicitações </span>
+                            </a>
+                            </li>
+                            <li
+                            class="
+                                nav-item
+                                justify-content-start justify-content-md-center
+                                flex-column flex-md-row
+                                align-items-start align-items-md-center
+                                dropdown"
+                            >
+                            <a
+                                href="#navbar-base"
+                                data-toggle="dropdown"
+                                role="button"
+                                aria-expanded="false"
+                                class="nav-link dropdown-toggle w-100"
+                                ><span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </span>
+                                <span class="nav-link-title"> Fornecimento </span>
+                                </a>
+                            </li>
+                            <li
+                            class="
+                                nav-item
+                                justify-content-start justify-content-md-center
+                                flex-column flex-md-row
+                                align-items-start align-items-md-center
+                                dropdown"
+                            >
+                            <a
+                                href="#navbar-base"
+                                data-toggle="dropdown"
+                                role="button"
+                                aria-expanded="false"
+                                class="nav-link dropdown-toggle w-100">
+                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <i class="fa fa-tasks"></i>
+                                </span>
+                                <span class="nav-link-title"> Consultoria </span>
+                                </a>
+                            </li>
+                            <li
+                            class="
+                                nav-item
+                                justify-content-start justify-content-md-center
+                                flex-column flex-md-row
+                                align-items-start align-items-md-center
+                                dropdown"
+                            >
+                            <a
+                                href="#navbar-base"
+                                data-toggle="dropdown"
+                                role="button"
+                                aria-expanded="false"
+                                class="nav-link dropdown-toggle w-100">
+                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <i class="fa fa-caret-square-o-down"></i>
+                                </span>
+                                <span class="nav-link-title"> Outros </span>
+                            </a>
+                            </li>
+                            <li
+                            class="
+                                nav-item
+                                justify-content-start justify-content-md-center
+                                flex-column flex-md-row
+                                align-items-start align-items-md-center"
+                            >
+                            <a
+                                href="#"
+                                class="nav-link">
+                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <i class="fa fa-lock"></i>
+                                </span>
+                                <span class="nav-link-title"> ADM </span>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="page-body"> 
+              <div class="container-xl">
+                  <div class="row gy-3">
+                      <div class="col-12">
+
+
+
+                        <div class="card">
+                            <ul class="nav nav-tabs" data-bs-toggle="tabs">
+                              <li class="nav-item">
+                                <a href="#tabs-home-ex1" class="nav-link active" data-bs-toggle="tab">DRE</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#tabs-profile-ex1" class="nav-link" data-bs-toggle="tab"><span class="text-yellow">
+                                    <i class="fa fa-star"></i>
+                                  </span>Ranking</a>
+                              </li>
+                            </ul>
+                            <div class="card-body">
+                              <div class="tab-content">
+                                <div class="tab-pane active show" id="tabs-home-ex1">
+                                      <div class="card-body">
+                                          <div class="row row-deck row-cards mt-0">
+                                              <div class="">
+                                                <h3 class="card-title">Desmostrativo de resultados (DRE) <a href="#">Baixar planilha</a>
+                                                </h3>
+                                                <form class="row g-4 p-4">
+                                                    <div class="col-md-5">
+                                                        <label class="form-label" for="inputAddress"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Loja</font></font>
+                                                        </label> 
+                                                        <input class="form-control" id="inputAddress" placeholder="Loucos por coxinha">
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <label class="form-label" for="inputState"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Período</font></font>
+                                                        </label> 
+                                                        <select class="form-select" id="inputState">
+                                                            <option selected="selected">
+                                                                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Semestral</font></font>
+                                                            </option>
+                                                            <option>
+                                                                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Trimestral</font></font>
+                                                            </option>
+                                                            <option>
+                                                                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mensal</font></font>
+                                                            </option>
+                                                            <option>
+                                                                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Anual</font></font>
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <label class="form-label" for="inputAno">
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;">Ano</font></font>
+                                                        </label> 
+                                                        
+                                                        <select class="form-select" id="inputAno">
+                                                            <option selected="selected"><font style="vertical-align: inherit;">
+                                                                <font style="vertical-align: inherit;">2022</font></font>
+                                                            </option>
+                                                            <option>
+                                                                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2021</font></font>
+                                                            </option>
+                                                            <option>
+                                                                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020</font></font>
+                                                            </option>
+                                                            <option>
+                                                                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2019</font></font>
+                                                            </option>
+                                                            <option>
+                                                                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2018</font></font>
+                                                            </option>
+                                                            <option>
+                                                                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2017</font></font>
+                                                            </option>
+                                                            <option>
+                                                                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2016</font></font>
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col align-self-end">
+                                                        <button class="btn btn-primary" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aplicar</font></font>
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="card">
+                                        <div class="card-table table-responsive">
+                                            <table class="table table-vcenter">
+                                                <div class="row justify-content-end">
+                                                    <div class="col-md-2 col-sm-2 border bg-light text-center">
+                                                      <h3>Abril</h3>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-2 border bg-light text-center">
+                                                        <h3>Maio</h3>
+                                                    </div>
+                                                    <div class="col-md-3 col-sm-2 border bg-light text-center">
+                                                        <h3>Junho</h3>
+                                                      </div>
+                                                </div>
+    
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Descrição</th>
+                                                        <th scope="col">R$</th>
+                                                        <th scope="col">R$</th>
+                                                        <th scope="col">R$</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="tr">
+                                                        <th>
+                                                        Receita Total com Vendas
+                                                        </th>
+                                                        <td>R$ 60.285,96</td>
+                                                        <td>R$ 34.343,43</td>
+                                                        <td>R$ 54.543.23</td>
+                                                    </tr>
+                                                    <tr class="tr">
+                                                        <th>
+                                                        Custos Variáveis totais
+                                                        </th>
+                                                        <td>R$ 50.484,99</td>
+                                                        <td>R$ 52.545.65</td>
+                                                        <td>R$ 32.433,54</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                        (-) Custos com materiais diretos
+                                                        </td>
+                                                        <td>R$ 23.922,01</td>
+                                                        <td>R$ 39.434,40</td>
+                                                        <td>R$ 23.432,43</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                        (-) Impostos sobre vendas
+                                                        </td>
+                                                        <td>R$ 5.828,19</td>
+                                                        <td>R$ 9.432,11</td>
+                                                        <td>R$ 90.193,31</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                        (-)Gastos com vendas
+                                                        </td>
+                                                        <td>R$ 2.042,43</td>
+                                                        <td>R$ 3.565,45</td>
+                                                        <td>R$ 3.233,23</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                        Subtotal
+                                                        </th>
+                                                        <td class="text-red">R$ 31.792,63</td>
+                                                        <td>R$ 34.254,35</td>
+                                                        <td>R$ 31.232,44</td>
+                                                    </tr>
+                                                    <tr class="tr">
+                                                        <th>Margem de contribuição</th>
+                                                        <td>R$ 28.493,33</td>
+                                                        <td>R$ 33.347,23</td>
+                                                        <td>R$ 3.213,32</td>
+                                                    <tr>
+                                                        <th>(-) Custos Fixos Totais</th>
+                                                        <td>R$ 18.692,36</td>
+                                                        <td>R$ 2.323,45</td>
+                                                        <td>R$ 34.441,24</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Resutado Operacional</th>
+                                                        <td class="text-green">R$ 9.800,97</td>
+                                                        <td>R$ 43.241,24</td>
+                                                        <td>R$ 11.321,43</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                  </div>
+
+                                </div>
+                                <div class="tab-pane" id="tabs-profile-ex1">
+                                    <div class="card-body">
+                                        <div class="row row-deck row-cards mt-0">
+                                            <div class="">
+                                              <form class="row g-4 p-4">
+                                                  <div class="col-md-6">
+                                                      <label class="form-label" for="inputState"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Variável</font></font>
+                                                      </label> 
+                                                      <select class="form-select" id="inputState">
+                                                          <option selected="selected">
+                                                              <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Faturamento Total</font></font>
+                                                          </option>
+                                                          <option>
+                                                              <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lucratividade</font></font>
+                                                          </option>
+                                                          <option>
+                                                              <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tichk Médio</font></font>
+                                                          </option>
+                                                          <option>
+                                                              <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CMV</font></font>
+                                                          </option>
+                                                          <option>
+                                                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Quantidade de Produtos Vendidos</font></font>
+                                                        </option>
+                                                      </select>
+                                                  </div>
+                                                  <div class="col-md-5">
+                                                    <label class="form-label" for="inputAddress"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Quantidade de Lojas no Pódio</font></font>
+                                                    </label> 
+                                                    <input class="form-control" id="inputAddress" placeholder="10">
+                                                </div>
+                                              </form>
+                                              
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                    <tr>
+                                                        <th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#</font></font></th>
+                                                        <th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Loja</font></font></th>
+                                                        <th>&nbsp;</th>
+                                                        <th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Faturamento</font></font></th>
+                                                        <th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">%</font></font></th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></th>
+                                                        <td colspan="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">João Pessoa</font></font></td>
+                                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">R$ 500.000,34</font></font></td>
+                                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4,32%</font></font></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></th>
+                                                        <td colspan="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recife -  Boa viagem</font></font></td>
+                                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">R$ 456.235,54</font></font></td>
+                                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3,30%</font></font></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></th>
+                                                        <td colspan="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recife - Boa Vista</font></font></td>
+                                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">R$ 432.435,54</font></font></td>
+                                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2,90%</font></font></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></th>
+                                                        <td colspan="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Salvador</font></font></td>
+                                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">R$ 322.435,21</font></font></td>
+                                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2,70%</font></font></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></th>
+                                                        <td colspan="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mossoró - Santo Antônio</font></font></td>
+                                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">R$ 402.415,00</font></font></td>
+                                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2,23%</font></font></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6</font></font></th>
+                                                        <td colspan="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">São Luiz</font></font></td>
+                                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">R$ 332.435,33</font></font></td>
+                                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2,12%</font></font></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7</font></font></th>
+                                                        <td colspan="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ariquemes</font></font></td>
+                                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">R$ 322.435,54</font></font></td>
+                                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2,02%</font></font></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8</font></font></th>
+                                                        <td colspan="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Minas Gerais</font></font></td>
+                                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">R$ 313.435,54</font></font></td>
+                                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2,00%</font></font></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9</font></font></th>
+                                                        <td colspan="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Belo Horizonte</font></font></td>
+                                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">R$ 290.435,54</font></font></td>
+                                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1,90%</font></font></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10</font></font></th>
+                                                        <td colspan="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Porto Seguro</font></font></td>
+                                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">R$ 288.435,54</font></font></td>
+                                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1,60%</font></font></td>
+                                                    </tr>
+                                                    
+                                                    </tbody>
+                                                </table>
+                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                </div>
+                <footer class="footer">
+                    <div class="container">
+                        <div class="row align-items-center flex-row-reverse">
+                            <div class="
+                                col-12
+                                text-center
+                                d-flex
+                                justify-content-between
+                                align-items-center
+                                flex-column flex-sm-row"
+                            >
+                                <span class="mb-5 mb-sm-0">
+                                    <a href="https://technine.com.br">
+                                    <img
+                                        src="https://portal.amavia.technine.com.br/images/portal/logo_horizontal.png"
+                                        height="35"
+                                        alt="Portal do Franqueado"
+                                        title="Portal do Franqueado" />
+                                    </a>
+                                </span>
+                                <span class="mb-5 mb-sm-0"
+                                    ><a href="https://technine.com.br"
+                                    ><img
+                                        src="https://portal.amavia.technine.com.br/images/portal/logo-horizontal.svg"
+                                        height="35" /></a
+                                ></span>
+                                <span> Copyright © 2022. </span>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+          </div>
+          <script src="https://unpkg.com/@tabler/core@latest/dist/js/tabler.min.js"></script>
+            <!-- Libs JS -->
+          <script src="./dist/apexcharts.min.js"></script>
+          <script>
+            // @formatter:off
+            document.addEventListener("DOMContentLoaded", function () {
+              window.ApexCharts && (new ApexCharts(document.getElementById('chart-revenue-bg'), {
+                chart: {
+                  type: "area",
+                  fontFamily: 'inherit',
+                  height: 40.0,
+                  sparkline: {
+                    enabled: true
+                  },
+                  animations: {
+                    enabled: false
+                  },
+                },
+                dataLabels: {
+                  enabled: false,
+                },
+                fill: {
+                  opacity: .16,
+                  type: 'solid'
+                },
+                stroke: {
+                  width: 2,
+                  lineCap: "round",
+                  curve: "smooth",
+                },
+                series: [{
+                  name: "Profits",
+                  data: [37, 35, 44, 28, 36, 24, 65, 31, 37, 39, 62, 51, 35, 41, 35, 27, 93, 53, 61, 27, 54, 43, 19, 46, 39, 62, 51, 35, 41, 67]
+                }],
+                grid: {
+                  strokeDashArray: 4,
+                },
+                xaxis: {
+                  labels: {
+                    padding: 0,
+                  },
+                  tooltip: {
+                    enabled: false
+                  },
+                  axisBorder: {
+                    show: false,
+                  },
+                  type: 'datetime',
+                },
+                yaxis: {
+                  labels: {
+                    padding: 4
+                  },
+                },
+                labels: [
+                  '2022-06-20', '2022-06-21', '2022-06-22', '2022-06-23', '2022-06-24', '2022-06-25', '2022-06-26', '2022-06-27', '2022-06-28', '2022-06-29', '2022-06-30', '2022-07-01', '2022-07-02', '2022-07-03', '2022-07-04', '2022-07-05', '2022-07-06', '2022-07-07', '2022-07-08', '2022-07-09', '2022-07-10', '2022-07-11', '2022-07-12', '2022-07-13', '2022-07-14', '2022-07-15', '2022-07-16', '2022-07-17', '2022-07-18', '2022-07-19'
+                ],
+                colors: ["#206bc4"],
+                legend: {
+                  show: false,
+                },
+              })).render();
+            });
+            // @formatter:on
+          </script>
+
+          <script>
+            // @formatter:off
+            document.addEventListener("DOMContentLoaded", function () {
+              window.ApexCharts && (new ApexCharts(document.getElementById('chart-active-users'), {
+                chart: {
+                  type: "bar",
+                  fontFamily: 'inherit',
+                  height: 40.0,
+                  sparkline: {
+                    enabled: true
+                  },
+                  animations: {
+                    enabled: false
+                  },
+                },
+                plotOptions: {
+                  bar: {
+                    columnWidth: '50%',
+                  }
+                },
+                dataLabels: {
+                  enabled: false,
+                },
+                fill: {
+                  opacity: 1,
+                },
+                series: [{
+                  name: "Profits",
+                  data: [37, 35, 44, 28, 36, 24, 65, 31, 37, 39, 62, 51, 35, 41, 35, 27, 93, 53, 61, 27, 54, 43, 19, 46, 39, 62, 51, 35, 41, 67]
+                }],
+                grid: {
+                  strokeDashArray: 4,
+                },
+                xaxis: {
+                  labels: {
+                    padding: 0,
+                  },
+                  tooltip: {
+                    enabled: false
+                  },
+                  axisBorder: {
+                    show: false,
+                  },
+                  type: 'datetime',
+                },
+                yaxis: {
+                  labels: {
+                    padding: 4
+                  },
+                },
+                labels: [
+                  '2020-06-20', '2020-06-21', '2020-06-22', '2020-06-23', '2020-06-24', '2020-06-25', '2020-06-26', '2020-06-27', '2020-06-28', '2020-06-29', '2020-06-30', '2020-07-01', '2020-07-02', '2020-07-03', '2020-07-04', '2020-07-05', '2020-07-06', '2020-07-07', '2020-07-08', '2020-07-09', '2020-07-10', '2020-07-11', '2020-07-12', '2020-07-13', '2020-07-14', '2020-07-15', '2020-07-16', '2020-07-17', '2020-07-18', '2020-07-19'
+                ],
+                colors: ["#206bc4"],
+                legend: {
+                  show: false,
+                },
+              })).render();
+            });
+            // @formatter:on
+          </script>
+          <script>
+            // @formatter:off
+            document.addEventListener("DOMContentLoaded", function () {
+              window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-sales'), {
+                chart: {
+                  type: "radialBar",
+                  fontFamily: 'inherit',
+                  height: 40,
+                  width: 40,
+                  animations: {
+                    enabled: false
+                  },
+                  sparkline: {
+                    enabled: true
+                  },
+                },
+                tooltip: {
+                  enabled: false,
+                },
+                plotOptions: {
+                  radialBar: {
+                    hollow: {
+                      margin: 0,
+                      size: '75%'
+                    },
+                    track: {
+                      margin: 0
+                    },
+                    dataLabels: {
+                      show: false
+                    }
+                  }
+                },
+                colors: ["#206bc4"],
+                series: [56],
+              })).render();
+            });
+            // @formatter:on
+          </script>
+          <script>
+            // @formatter:off
+            document.addEventListener("DOMContentLoaded", function () {
+              window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-orders'), {
+                chart: {
+                  type: "radialBar",
+                  fontFamily: 'inherit',
+                  height: 40,
+                  width: 40,
+                  animations: {
+                    enabled: false
+                  },
+                  sparkline: {
+                    enabled: true
+                  },
+                },
+                tooltip: {
+                  enabled: false,
+                },
+                plotOptions: {
+                  radialBar: {
+                    hollow: {
+                      margin: 0,
+                      size: '75%'
+                    },
+                    track: {
+                      margin: 0
+                    },
+                    dataLabels: {
+                      show: false
+                    }
+                  }
+                },
+                colors: ["#5eba00"],
+                series: [56],
+              })).render();
+            });
+            // @formatter:on
+          </script>
+          <script>
+            // @formatter:off
+            document.addEventListener("DOMContentLoaded", function () {
+              window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-members'), {
+                chart: {
+                  type: "radialBar",
+                  fontFamily: 'inherit',
+                  height: 40,
+                  width: 40,
+                  animations: {
+                    enabled: false
+                  },
+                  sparkline: {
+                    enabled: true
+                  },
+                },
+                tooltip: {
+                  enabled: false,
+                },
+                plotOptions: {
+                  radialBar: {
+                    hollow: {
+                      margin: 0,
+                      size: '75%'
+                    },
+                    track: {
+                      margin: 0
+                    },
+                    dataLabels: {
+                      show: false
+                    }
+                  }
+                },
+                colors: ["#cd201f"],
+                series: [56],
+              })).render();
+            });
+            // @formatter:on
+          </script>
+          <script>
+            // @formatter:off
+            document.addEventListener("DOMContentLoaded", function () {
+              window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-comments'), {
+                chart: {
+                  type: "radialBar",
+                  fontFamily: 'inherit',
+                  height: 40,
+                  width: 40,
+                  animations: {
+                    enabled: false
+                  },
+                  sparkline: {
+                    enabled: true
+                  },
+                },
+                tooltip: {
+                  enabled: false,
+                },
+                plotOptions: {
+                  radialBar: {
+                    hollow: {
+                      margin: 0,
+                      size: '75%'
+                    },
+                    track: {
+                      margin: 0
+                    },
+                    dataLabels: {
+                      show: false
+                    }
+                  }
+                },
+                colors: ["#fab005"],
+                series: [56],
+              })).render();
+            });
+            // @formatter:on
+          </script>
+    </body>
+</html>
