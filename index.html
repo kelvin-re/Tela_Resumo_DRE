@@ -462,14 +462,14 @@
                                         <div class="card-table table-responsive">
                                             <table class="table table-vcenter">
                                                 <div class="row justify-content-end">
-                                                    <div class="col-md-2 col-sm-2 border bg-light text-center">
+                                                    <div class="col-md-3 border bg-light text-center">
                                                       <i class="chevron-left fa fa-chevron-left"></i>
                                                       <h3>Abril</h3>
                                                     </div>
-                                                    <div class="col-md-2 col-sm-2 border bg-light text-center">
+                                                    <div class="col-md-3 col border bg-light text-center">
                                                         <h3>Maio</h3>
                                                     </div>
-                                                    <div class="col-md-3 col-sm-2 border bg-light text-center">
+                                                    <div class="col-md-3 col border bg-light text-center">
                                                       <i class="chevron-right fa fa-chevron-right"></i>
                                                       <h3>Junho</h3>
                                                     </div>
@@ -477,25 +477,235 @@
     
                                                 <thead>
                                                     <tr>
-                                                        <th scope="col">Descrição</th>
+                                                      <th scope="col">Descrição</th>
+                                                      <th>&nbsp;</th>
                                                         <th scope="col">R$</th>
                                                         <th scope="col">R$</th>
                                                         <th scope="col">R$</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
+                                                  <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                    <td>
+                                                      <div class="card card-sm">
+                                                        <div class="card-body">
+                                                          <div class="row align-items-center">
+                                                            <div class="col-auto">
+                                                              <div class="chart-sparkline chart-sparkline-square" id="sparkline-sales"></div>
+                                                            </div>
+                                                            <div class="col">
+                                                              <div class="font-weight-medium">
+                                                                T.M.:
+                                                              </div>
+                                                              <div class="text-muted">
+                                                                49,36
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+
+                                                      <div class="card card-sm">
+                                                        <div class="card-body">
+                                                          <div class="row align-items-center">
+                                                            <div class="col-auto">
+                                                              <div class="chart-sparkline chart-sparkline-square" id="sparkline-comments"></div>
+                                                            </div>
+                                                            <div class="col">
+                                                              <div class="font-weight-medium">
+                                                                Pessoas.:
+                                                              </div>
+                                                              <div class="text-muted">
+                                                                92.252
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="card col d-grid gap-2 d-md-flex justify-content-md-center">
+                                                        <div class="">
+                                                          <div class="card-body">
+                                                            <div class="d-flex align-items-center">
+                                                              <div class="subheader">Total Itens vendidos</div>
+                                                              <div class="ms-auto lh-1">
+                                                                <div class="dropdown">
+                                                                  <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Útimos 7 dias</a>
+                                                                  <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item active" href="#">Útimos 7 dias</a>
+                                                                    <a class="dropdown-item" href="#">Útimos 30 dias</a>
+                                                                    <a class="dropdown-item" href="#">Útimos 3 meses</a>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="d-flex align-items-baseline">
+                                                              <div class="h1 mb-3 me-2">2,986</div>
+                                                              <div class="me-auto">
+                                                                <span class="text-green d-inline-flex align-items-center lh-1">
+                                                                  68% <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="icon ms-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="3 17 9 11 13 15 21 7" /><polyline points="14 7 21 7 21 14" /></svg>
+                                                                </span>
+                                                              </div>
+                                                            </div>
+                                                            <div id="chart-active-users" class="chart-sm"></div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </td>
+                                                    <td>
+                                                      
+                                                      <div class="card card-sm">
+                                                        <div class="card-body">
+                                                          <div class="row align-items-center">
+                                                            <div class="col-auto">
+                                                              <div class="chart-sparkline chart-sparkline-square" id="sparkline-sales1"></div>
+                                                            </div>
+                                                            <div class="col">
+                                                              <div class="font-weight-medium">
+                                                                T.M.:
+                                                              </div>
+                                                              <div class="text-muted">
+                                                                12,36
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+
+                                                      <div class="card card-sm">
+                                                        <div class="card-body">
+                                                          <div class="row align-items-center">
+                                                            <div class="col-auto">
+                                                              <div class="chart-sparkline chart-sparkline-square" id="sparkline-comments1"></div>
+                                                            </div>
+                                                            <div class="col">
+                                                              <div class="font-weight-medium">
+                                                                Pessoas.:
+                                                              </div>
+                                                              <div class="text-muted">
+                                                                25.252
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="card col d-grid gap-2 d-md-flex justify-content-md-center">
+                                                        <div class="">
+                                                          <div class="card-body">
+                                                            <div class="d-flex align-items-center">
+                                                              <div class="subheader">Total Itens vendidos</div>
+                                                              <div class="ms-auto lh-1">
+                                                                <div class="dropdown">
+                                                                  <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Útimos 7 dias</a>
+                                                                  <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item active" href="#">Útimos 7 dias</a>
+                                                                    <a class="dropdown-item" href="#">Útimos 30 dias</a>
+                                                                    <a class="dropdown-item" href="#">Útimos 3 meses</a>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="d-flex align-items-baseline">
+                                                              <div class="h1 mb-3 me-2">2,236</div>
+                                                              <div class="me-auto">
+                                                                <span class="text-green d-inline-flex align-items-center lh-1">
+                                                                  58% <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="icon ms-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="3 17 9 11 13 15 21 7" /><polyline points="14 7 21 7 21 14" /></svg>
+                                                                </span>
+                                                              </div>
+                                                            </div>
+                                                            <div id="chart-active-users1" class="chart-sm"></div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </td>
+
+                                                    <td>
+                                                      <div class="card card-sm">
+                                                        <div class="card-body">
+                                                          <div class="row align-items-center">
+                                                            <div class="col-auto">
+                                                              <div class="chart-sparkline chart-sparkline-square" id="sparkline-sales2"></div>
+                                                            </div>
+                                                            <div class="col">
+                                                              <div class="font-weight-medium">
+                                                                T.M.:
+                                                              </div>
+                                                              <div class="text-muted">
+                                                                86,36
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+
+                                                      <div class="card card-sm">
+                                                        <div class="card-body">
+                                                          <div class="row align-items-center">
+                                                            <div class="col-auto">
+                                                              <div class="chart-sparkline chart-sparkline-square" id="sparkline-comments2"></div>
+                                                            </div>
+                                                            <div class="col">
+                                                              <div class="font-weight-medium">
+                                                                Pessoas.:
+                                                              </div>
+                                                              <div class="text-muted">
+                                                                52.252
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="card col
+                                                       d-grid gap-2 d-md-flex justify-content-md-center">
+                                                        <div class="">
+                                                          <div class="card-body">
+                                                            <div class="d-flex align-items-center">
+                                                              <div class="subheader">Total Itens vendidos</div>
+                                                              <div class="ms-auto lh-1">
+                                                                <div class="dropdown">
+                                                                  <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Útimos 7 dias</a>
+                                                                  <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a class="dropdown-item active" href="#">Útimos 7 dias</a>
+                                                                    <a class="dropdown-item" href="#">Útimos 30 dias</a>
+                                                                    <a class="dropdown-item" href="#">Útimos 3 meses</a>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="d-flex align-items-baseline">
+                                                              <div class="h1 mb-3 me-2">4,234</div>
+                                                              <div class="me-auto">
+                                                                <span class="text-green d-inline-flex align-items-center lh-1">
+                                                                  88% <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" class="icon ms-1" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="3 17 9 11 13 15 21 7" /><polyline points="14 7 21 7 21 14" /></svg>
+                                                                </span>
+                                                              </div>
+                                                            </div>
+                                                            <div id="chart-active-users2" class="chart-sm"></div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </td>
+                                                  </tr>
                                                     <tr class="tr">
                                                         <th>
                                                         Receita Total com Vendas
                                                         </th>
+                                                        <td>&nbsp;</td>
                                                         <td>R$ 60.285,96</td>
                                                         <td>R$ 34.343,43</td>
-                                                        <td>R$ 54.543.23</td>
+                                                        <td>
+                                                          R$ 54.543.23
+                                                        </td>
                                                     </tr>
                                                     <tr class="tr">
                                                         <th>
                                                         Custos Variáveis totais
                                                         </th>
+                                                        <td>&nbsp;</td>
                                                         <td>R$ 50.484,99</td>
                                                         <td>R$ 52.545.65</td>
                                                         <td>R$ 32.433,54</td>
@@ -504,6 +714,7 @@
                                                         <td>
                                                         (-) Custos com materiais diretos
                                                         </td>
+                                                        <td>&nbsp;</td>
                                                         <td>R$ 23.922,01</td>
                                                         <td>R$ 39.434,40</td>
                                                         <td>R$ 23.432,43</td>
@@ -512,6 +723,7 @@
                                                         <td>
                                                         (-) Impostos sobre vendas
                                                         </td>
+                                                        <td>&nbsp;</td>
                                                         <td>R$ 5.828,19</td>
                                                         <td>R$ 9.432,11</td>
                                                         <td>R$ 90.193,31</td>
@@ -520,6 +732,7 @@
                                                         <td>
                                                         (-)Gastos com vendas
                                                         </td>
+                                                        <td>&nbsp;</td>
                                                         <td>R$ 2.042,43</td>
                                                         <td>R$ 3.565,45</td>
                                                         <td>R$ 3.233,23</td>
@@ -528,23 +741,27 @@
                                                         <th>
                                                         Subtotal
                                                         </th>
+                                                        <td>&nbsp;</td>
                                                         <td class="text-red">R$ 31.792,63</td>
                                                         <td>R$ 34.254,35</td>
                                                         <td>R$ 31.232,44</td>
                                                     </tr>
                                                     <tr class="tr">
                                                         <th>Margem de contribuição</th>
+                                                        <td>&nbsp;</td>
                                                         <td>R$ 28.493,33</td>
                                                         <td>R$ 33.347,23</td>
                                                         <td>R$ 3.213,32</td>
                                                     <tr>
                                                         <th>(-) Custos Fixos Totais</th>
+                                                        <td>&nbsp;</td>
                                                         <td>R$ 18.692,36</td>
                                                         <td>R$ 2.323,45</td>
                                                         <td>R$ 34.441,24</td>
                                                     </tr>
                                                     <tr>
                                                         <th>Resutado Operacional</th>
+                                                        <td>&nbsp;</td>
                                                         <td class="text-green">R$ 9.800,97</td>
                                                         <td>R$ 43.241,24</td>
                                                         <td>R$ 11.321,43</td>
@@ -857,6 +1074,206 @@
           <script>
             // @formatter:off
             document.addEventListener("DOMContentLoaded", function () {
+              window.ApexCharts && (new ApexCharts(document.getElementById('chart-active-users1'), {
+                chart: {
+                  type: "bar",
+                  fontFamily: 'inherit',
+                  height: 40.0,
+                  sparkline: {
+                    enabled: true
+                  },
+                  animations: {
+                    enabled: false
+                  },
+                },
+                plotOptions: {
+                  bar: {
+                    columnWidth: '50%',
+                  }
+                },
+                dataLabels: {
+                  enabled: false,
+                },
+                fill: {
+                  opacity: 1,
+                },
+                series: [{
+                  name: "Profits",
+                  data: [37, 35, 44, 28, 36, 24, 65, 31, 37, 39, 62, 51, 35, 41, 35, 27, 93, 53, 61, 27, 54, 43, 19, 46, 39, 62, 51, 35, 41, 67]
+                }],
+                grid: {
+                  strokeDashArray: 4,
+                },
+                xaxis: {
+                  labels: {
+                    padding: 0,
+                  },
+                  tooltip: {
+                    enabled: false
+                  },
+                  axisBorder: {
+                    show: false,
+                  },
+                  type: 'datetime',
+                },
+                yaxis: {
+                  labels: {
+                    padding: 4
+                  },
+                },
+                labels: [
+                  '2020-06-20', '2020-06-21', '2020-06-22', '2020-06-23', '2020-06-24', '2020-06-25', '2020-06-26', '2020-06-27', '2020-06-28', '2020-06-29', '2020-06-30', '2020-07-01', '2020-07-02', '2020-07-03', '2020-07-04', '2020-07-05', '2020-07-06', '2020-07-07', '2020-07-08', '2020-07-09', '2020-07-10', '2020-07-11', '2020-07-12', '2020-07-13', '2020-07-14', '2020-07-15', '2020-07-16', '2020-07-17', '2020-07-18', '2020-07-19'
+                ],
+                colors: ["#206bc4"],
+                legend: {
+                  show: false,
+                },
+              })).render();
+            });
+            // @formatter:on
+          </script>
+          <script>
+            // @formatter:off
+            document.addEventListener("DOMContentLoaded", function () {
+              window.ApexCharts && (new ApexCharts(document.getElementById('chart-active-users2'), {
+                chart: {
+                  type: "bar",
+                  fontFamily: 'inherit',
+                  height: 40.0,
+                  sparkline: {
+                    enabled: true
+                  },
+                  animations: {
+                    enabled: false
+                  },
+                },
+                plotOptions: {
+                  bar: {
+                    columnWidth: '50%',
+                  }
+                },
+                dataLabels: {
+                  enabled: false,
+                },
+                fill: {
+                  opacity: 1,
+                },
+                series: [{
+                  name: "Profits",
+                  data: [37, 35, 44, 28, 36, 24, 65, 31, 37, 39, 62, 51, 35, 41, 35, 27, 93, 53, 61, 27, 54, 43, 19, 46, 39, 62, 51, 35, 41, 67]
+                }],
+                grid: {
+                  strokeDashArray: 4,
+                },
+                xaxis: {
+                  labels: {
+                    padding: 0,
+                  },
+                  tooltip: {
+                    enabled: false
+                  },
+                  axisBorder: {
+                    show: false,
+                  },
+                  type: 'datetime',
+                },
+                yaxis: {
+                  labels: {
+                    padding: 4
+                  },
+                },
+                labels: [
+                  '2020-06-20', '2020-06-21', '2020-06-22', '2020-06-23', '2020-06-24', '2020-06-25', '2020-06-26', '2020-06-27', '2020-06-28', '2020-06-29', '2020-06-30', '2020-07-01', '2020-07-02', '2020-07-03', '2020-07-04', '2020-07-05', '2020-07-06', '2020-07-07', '2020-07-08', '2020-07-09', '2020-07-10', '2020-07-11', '2020-07-12', '2020-07-13', '2020-07-14', '2020-07-15', '2020-07-16', '2020-07-17', '2020-07-18', '2020-07-19'
+                ],
+                colors: ["#206bc4"],
+                legend: {
+                  show: false,
+                },
+              })).render();
+            });
+            // @formatter:on
+          </script>
+          <script>
+            // @formatter:off
+            document.addEventListener("DOMContentLoaded", function () {
+              window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-sales1'), {
+                chart: {
+                  type: "radialBar",
+                  fontFamily: 'inherit',
+                  height: 40,
+                  width: 40,
+                  animations: {
+                    enabled: false
+                  },
+                  sparkline: {
+                    enabled: true
+                  },
+                },
+                tooltip: {
+                  enabled: false,
+                },
+                plotOptions: {
+                  radialBar: {
+                    hollow: {
+                      margin: 0,
+                      size: '75%'
+                    },
+                    track: {
+                      margin: 0
+                    },
+                    dataLabels: {
+                      show: false
+                    }
+                  }
+                },
+                colors: ["#206bc4"],
+                series: [86],
+              })).render();
+            });
+            // @formatter:on
+          </script>
+          <script>
+            // @formatter:off
+            document.addEventListener("DOMContentLoaded", function () {
+              window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-sales2'), {
+                chart: {
+                  type: "radialBar",
+                  fontFamily: 'inherit',
+                  height: 40,
+                  width: 40,
+                  animations: {
+                    enabled: false
+                  },
+                  sparkline: {
+                    enabled: true
+                  },
+                },
+                tooltip: {
+                  enabled: false,
+                },
+                plotOptions: {
+                  radialBar: {
+                    hollow: {
+                      margin: 0,
+                      size: '75%'
+                    },
+                    track: {
+                      margin: 0
+                    },
+                    dataLabels: {
+                      show: false
+                    }
+                  }
+                },
+                colors: ["#206bc4"],
+                series: [66],
+              })).render();
+            });
+            // @formatter:on
+          </script>
+          <script>
+            // @formatter:off
+            document.addEventListener("DOMContentLoaded", function () {
               window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-sales'), {
                 chart: {
                   type: "radialBar",
@@ -888,7 +1305,7 @@
                   }
                 },
                 colors: ["#206bc4"],
-                series: [56],
+                series: [36],
               })).render();
             });
             // @formatter:on
@@ -966,7 +1383,7 @@
                   }
                 },
                 colors: ["#cd201f"],
-                series: [56],
+                series: [76],
               })).render();
             });
             // @formatter:on
@@ -1005,7 +1422,85 @@
                   }
                 },
                 colors: ["#fab005"],
-                series: [56],
+                series: [36],
+              })).render();
+            });
+            // @formatter:on
+          </script>
+          <script>
+            // @formatter:off
+            document.addEventListener("DOMContentLoaded", function () {
+              window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-comments1'), {
+                chart: {
+                  type: "radialBar",
+                  fontFamily: 'inherit',
+                  height: 40,
+                  width: 40,
+                  animations: {
+                    enabled: false
+                  },
+                  sparkline: {
+                    enabled: true
+                  },
+                },
+                tooltip: {
+                  enabled: false,
+                },
+                plotOptions: {
+                  radialBar: {
+                    hollow: {
+                      margin: 0,
+                      size: '75%'
+                    },
+                    track: {
+                      margin: 0
+                    },
+                    dataLabels: {
+                      show: false
+                    }
+                  }
+                },
+                colors: ["#fab005"],
+                series: [50],
+              })).render();
+            });
+            // @formatter:on
+          </script>
+          <script>
+            // @formatter:off
+            document.addEventListener("DOMContentLoaded", function () {
+              window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-comments2'), {
+                chart: {
+                  type: "radialBar",
+                  fontFamily: 'inherit',
+                  height: 40,
+                  width: 40,
+                  animations: {
+                    enabled: false
+                  },
+                  sparkline: {
+                    enabled: true
+                  },
+                },
+                tooltip: {
+                  enabled: false,
+                },
+                plotOptions: {
+                  radialBar: {
+                    hollow: {
+                      margin: 0,
+                      size: '75%'
+                    },
+                    track: {
+                      margin: 0
+                    },
+                    dataLabels: {
+                      show: false
+                    }
+                  }
+                },
+                colors: ["#fab005"],
+                series: [66],
               })).render();
             });
             // @formatter:on
