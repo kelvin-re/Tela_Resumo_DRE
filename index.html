@@ -63,7 +63,24 @@
         }
         .tr{
           background-color: #F4F6FA;
-        } 
+        }
+        .chevron-left {
+          float: left;
+          margin-top: 8px;
+        }
+        .chevron-right{
+          float: right;
+          margin-top: 8px;
+        }
+        .ranking{
+          margin-top: 50px;
+        }
+        .ranking1{
+          margin-top: 40px;
+        }
+        .ranking3{
+          margin-top: 60px;
+        }
 
       </style>
     </head>
@@ -446,14 +463,16 @@
                                             <table class="table table-vcenter">
                                                 <div class="row justify-content-end">
                                                     <div class="col-md-2 col-sm-2 border bg-light text-center">
+                                                      <i class="chevron-left fa fa-chevron-left"></i>
                                                       <h3>Abril</h3>
                                                     </div>
                                                     <div class="col-md-2 col-sm-2 border bg-light text-center">
                                                         <h3>Maio</h3>
                                                     </div>
                                                     <div class="col-md-3 col-sm-2 border bg-light text-center">
-                                                        <h3>Junho</h3>
-                                                      </div>
+                                                      <i class="chevron-right fa fa-chevron-right"></i>
+                                                      <h3>Junho</h3>
+                                                    </div>
                                                 </div>
     
                                                 <thead>
@@ -568,7 +587,31 @@
                                                     <input class="form-control" id="inputAddress" placeholder="10">
                                                 </div>
                                               </form>
-                                              
+                                              <!-- <div class="row">
+                                                <div class="ranking2"></div>
+                                                <div class="ranking1 bg-primary bg-gradient false"></div>
+                                                <div class="ranking3"></div>
+                                              </div> -->
+
+
+                                              <div class="row g-5">
+                                                <div class="col-6 col-sm-4 col-lg-2">
+                                                  <div class="ranking1 bg-primary text-center" style="height: 140px; font-size: 70px; color: #CDCDCD;">
+                                                    <i class="ranking fa fa-trophy "></i>
+                                                  </div>
+                                                </div>
+                                                <div class="col-6 col-sm-4 col-lg-2">
+                                                  <div class="bg-secondary text-yellow text-center" style="height: 180px; font-size: 70px;">
+                                                    <i class="ranking fa fa-trophy "></i>
+                                                  </div>
+                                                </div>
+                                                <div class="col-6 col-sm-4 col-lg-2">
+                                                  <div class="ranking3 bg-success text-center" style="height: 120px; font-size: 70px; color: #B26D2C;">
+                                                    <i class="fa fa-trophy "></i>
+                                                  </div>
+                                                </div>
+                                              </div>
+
                                                 <table class="table table-striped">
                                                     <thead>
                                                     <tr>
